@@ -5,7 +5,7 @@ public class MyApp {
 	public static void main(String[] args) {
 		
 		//create the object
-		Coach theCoach = new TrackCoach();
+		Coach theCoach = new CrossfitCoach();
 		
 		//use tge object
 		System.out.println(theCoach.getDailyWorkout());
