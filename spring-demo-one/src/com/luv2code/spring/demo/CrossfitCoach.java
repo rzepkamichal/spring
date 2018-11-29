@@ -8,4 +8,10 @@ public class CrossfitCoach implements Coach {
 		return "Practice some Kettle Swing!";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
