@@ -2,6 +2,16 @@ package com.luv2code.spring.demo;
 
 public class CrossfitCoach implements Coach {
 
+	private FortuneService fortuneService;
+	
+	public CrossfitCoach() {};
+	
+	public CrossfitCoach(FortuneService theFortuneService) {
+		//System.out.println("Crossfit Coach: inside injected constructor");
+		this.fortuneService = theFortuneService;
+	}
+	
+	
 	@Override
 	public String getDailyWorkout() {
 		
@@ -10,8 +20,8 @@ public class CrossfitCoach implements Coach {
 
 	@Override
 	public String getDailyFortune() {
-		// TODO Auto-generated method stub
-		return null;
+	
+		return "Lucky you - don't have to run today";
 	}
 
 }
